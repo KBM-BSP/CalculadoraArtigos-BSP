@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora Penal - BSP</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<style type="text/css">
+		body{
+			background: rgb(30,30,30);
+		}
+		.logo{
+			margin-top: 10px;
+			float: left;
+			width: 100%;
+
+		}
+		.logo img{
+			width: 100px;
+			margin-left: calc(50% - 50px);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="logo">
+			<img src="https://brasilsaopaulorp.com/wp-content/uploads/2020/08/logotransbsp.png">
+		</div>
+		<div class="r float-start mt-3" style="color: white;">
+			<div class="row julgamento float-start w-100">
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="16" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					     [Art.16] Porte Ilegal De Arma
+					  </label>
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="33" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					    [Art.33] Trafico De Drogas
+					  </label>
+					</div>
+				</div>
+			</div>
+			<div class="row julgamento float-start w-100">
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="87" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					     [Art.  87] Negociação/receptação de armas
+					  </label>
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="121" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					    [Art.  121] Tentativa de Homicídio
+					  </label>
+					</div>
+				</div>
+			</div>
+			<div class="row julgamento float-start w-100">
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="129" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					     [Art. 129] Agressão
+					  </label>
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="288" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					    [Art. 288] Formação de quadrilha (3 ou mais meliantes)
+					  </label>
+					</div>
+				</div>
+			</div>
+			<div class="row julgamento float-start w-100">
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="328" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					     [Art. 328] Tentativa de Fuga
+					  </label>
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="175" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					    [Art. 175] Direção perigosa
+					  </label>
+					</div>
+				</div>
+			</div>
+			<div class="row julgamento float-start w-100">
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="155" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					     [Art. 155] Furto 
+					  </label>
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="157" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					    [Art. 157] Roubo / Dinheiro sujo
+					  </label>
+					</div>
+				</div>
+			</div>
+			<div class="row julgamento float-start w-100">
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="163" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					     [Art. 163] Destruir patrimônio publico e privado
+					  </label>
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="329" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					    [Art. 329] Resistência prisão
+					  </label>
+					</div>
+				</div>
+			</div>
+			<div class="row julgamento float-start w-100 ">
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="330" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					     [Art. 330] Falsa identidade
+					  </label>
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="331" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					    [Art. 331] Desacato a Autoridade
+					  </label>
+					</div>
+				</div>
+			</div>
+			<div class="row julgamento float-start w-100">
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="333" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					     [Art. 333] Suborno/Corrupção
+					  </label>
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="351" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					    [Art. 351] Extorsão mediante ao sequestro
+					  </label>
+					</div>
+				</div>
+			</div><div class="row julgamento float-start w-100">
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="289" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					     [Art. 289] Associação Criminosa
+					  </label>
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="158" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					    [Art. 158] Tráfico de Armas
+					  </label>
+					</div>
+				</div>
+			</div>
+			<div class="row julgamento float-start w-100">
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="147" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					     [Art. 147] Ameaça
+					  </label>
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="27" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					    [Art. 27] Cúmplice
+					  </label>
+					</div>
+				</div>
+			</div>
+			<div class="row julgamento float-start w-100">
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="5" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					     [Art. 5] Abuso de Poder
+					  </label>
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="14" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					    [Art. 14] Tentativa de Homicídio
+					  </label>
+					</div>
+				</div>
+			</div><div class="row julgamento float-start w-100">
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="366" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					     [Art. 366] Dinheiro Sujo
+					  </label>
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-check">
+					  <input class="form-check-input" name="art[]" type="checkbox" value="317" id="flexCheckDefault">
+					  <label class="form-check-label" for="flexCheckDefault">
+					    [Art. 317] Corrupção
+					  </label>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	<div class="container">
+		<div class="alert alert-secondary float-start w-100 mt-2" role="alert">
+		  
+		  <p class="mb-0"><strong>Tempo max de cana: </strong> <timecana>0 Minutos</timecana></p>
+		  <hr>
+		  <p class="mb-0"><strong>Multas: </strong> <multa>0 R$</multa></p>
+		  <hr>
+		  <p class="mb-0"><strong>Adicional: </strong> <adds></adds></p>
+		  <hr>
+		  <p class="mb-0"><strong>Motivos: </strong> Art: <motivos></motivos></p>
+		</div>
+	</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+</html>
+<script type="text/javascript">
+	function onlyUnique(value, index, self) {
+	  return self.indexOf(value) === index;
+	}
+	var array = [];
+	var tmp= 0;
+	var add= [];
+	$('input').click(function(){
+		array =[];
+		tmp =0;
+		add=[];
+		$('motivos').html("");
+		$('multa').html("0 R$");
+		$('adds').html("");
+		$("input:checkbox:checked").each(function(){ 
+				array.push($(this).val());
+			 });
+		
+		var l = array.length;
+		if(l == 0){
+
+			$('timecana').html("0 Minutos");
+			$('timecanamin').html("0 Minutos");
+		}
+
+		for (var i = array.length - 1; i >= 0; i--) {
+			$('motivos').append(array[i]+", ");
+			if(array[i] == 16){
+				tmp= tmp+25;
+			}
+			if(array[i] == 33){
+				tmp= tmp+20;
+			}
+			if(array[i] == 121){
+				tmp= tmp+40;
+			}
+			if(array[i] == 129){
+				tmp= tmp+10;
+			}
+			if(array[i] == 87){
+				tmp= tmp+20;
+			}if(array[i] == 288){
+				tmp= tmp+30;
+			}
+			if(array[i] == 328){
+				tmp= tmp+20;
+			}
+			if(array[i] == 175){
+				tmp= tmp+10;
+			}
+			if(array[i] == 155){
+				tmp= tmp+15;
+			}
+			if(array[i] == 157){
+				tmp= tmp+30;
+			}
+			if(array[i] == 163){
+				tmp= tmp+15;
+			}
+			if(array[i] == 329){
+				tmp= tmp+15;
+			}
+			if(array[i] == 330){
+				tmp= tmp+25;
+			}
+			if(array[i] == 331){
+				tmp= tmp+20;
+			}
+			if(array[i] == 333){
+				tmp= tmp+20;
+			}
+			if(array[i] == 351){
+				tmp= tmp+30;
+			}
+			if(array[i] == 289){
+				tmp= tmp+20;
+			}
+			if(array[i] == 158){
+				tmp= tmp+15;
+			}
+			if(array[i] == 147){
+				tmp= tmp+10;
+			}
+			if(array[i] == 27){
+				tmp= tmp+15;
+			}
+			
+			if(array[i] == 5){
+				tmp= tmp+25;
+			}
+			if(array[i] == 14){
+				tmp= tmp+35;
+			}
+			if(array[i] == 366){
+				tmp= tmp+30;
+			}
+			if(array[i] == 317){
+				tmp= tmp+30;
+			}
+
+			$('timecana').html(tmp+" Minutos");
+			if(tmp > 20){
+				$('timecanamin').html(tmp-10+" Minutos");
+			}else{
+
+				$('timecanamin').html("0 Minutos");
+			}
+		}
+		for (var i = add.length - 1; i >= 0; i--) {
+			$('adds').append(add[i]);
+		}
+
+	});
+</script>
